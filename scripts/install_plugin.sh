@@ -37,7 +37,6 @@ fi
 tar xzf "releases/v${version}.tar.gz" -C "releases/v${version}"
 mv "releases/v${version}/edit" "bin/edit" || \
     mv "releases/v${version}/edit.exe" "bin/edit"
-mv "releases/v${version}/completion.yaml" .
 mv "releases/v${version}/plugin.yaml" .
 mv "releases/v${version}/README.md" .
 mv "releases/v${version}/LICENSE" .
