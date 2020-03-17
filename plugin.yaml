@@ -1,10 +1,8 @@
 name: "edit"
-version: "0.3.0"
-usage: "edit a release"
-description: |-
-  Edit a release.
-ignoreFlags: false
-useTunnel: true
-command: "$HELM_PLUGIN_DIR/helm-edit"
+version: "0.4.0"
+usage: "edit user specified values of a release"
+description: "edit user specified values of a release"
+command: "$HELM_PLUGIN_DIR/bin/edit"
 hooks:
-  install: "$HELM_PLUGIN_DIR/install.sh"
+  install: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
+  update: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"

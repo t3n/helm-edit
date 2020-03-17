@@ -11,6 +11,9 @@ This plugin adds `helm edit` command. It opens the editor defined by `HELM_EDITO
 
 ```bash
 $ helm plugin install https://github.com/mstrzele/helm-edit
+
+# For use with Helm v2.x.x use version <= 0.3.0
+$ helm plugin install https://github.com/mstrzele/helm-edit --version 0.3.0
 ```
 
 ## Usage
