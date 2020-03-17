@@ -17,6 +17,7 @@ import (
 	"helm.sh/helm/v3/pkg/cli"
 	"helm.sh/helm/v3/pkg/cli/values"
 	"helm.sh/helm/v3/pkg/getter"
+	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 )
 
 var (
